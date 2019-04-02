@@ -1,17 +1,14 @@
 
 
 class Pokemon {
-  int id;
-  String name;
+  // int id;
+  // String name;
+  List<dynamic> results;
 
-  Pokemon({this.id, this.name});
+  // Pokemon({this.id, this.name});
+  Pokemon({this.results});
 
   factory Pokemon.fromJson(Map<String, dynamic> json) {
-    // print(json['id']);
-    // print(json['name']);
-    return Pokemon(
-      id: json['id'],
-      name: json['name']
-    );
+    return Pokemon(results: json['results']);
   }
 }
