@@ -7,9 +7,9 @@ import 'package:http/http.dart' as http;
 import '../models/Pokemon.dart';
 
 class PokeapiService {
-  Future<Pokemon> fetchPokemon() async {
+  Future<dynamic> fetchPokemon() async {
     final response =
-        await http.get('https://pokeapi.co/api/v2/pokemon/1');
+        await http.get('https://pokeapi.co/api/v2/pokemon');
 
     if (response.statusCode == 200) {
       // If server returns an OK response, parse the JSON

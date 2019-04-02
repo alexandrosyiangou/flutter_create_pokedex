@@ -11,11 +11,11 @@ class HomeScreen extends StatelessWidget {
         title: Text('Flutter Create Pokedex'),
       ),
       body: Center(
-        child: FutureBuilder<Pokemon>(
+        child: FutureBuilder<dynamic>(
           future: PokeapiService().fetchPokemon(),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
-              return Text(snapshot.data.name);
+              return Text('I Have Data!!');
             } else if (snapshot.hasError) {
               return Text("${snapshot.error}");
             }
