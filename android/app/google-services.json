@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "938290982189",
+    "firebase_url": "https://flutter-create-pokedex.firebaseio.com",
+    "project_id": "flutter-create-pokedex",
+    "storage_bucket": "flutter-create-pokedex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938290982189:android:31ab3eb431a70d88",
+        "android_client_info": {
+          "package_name": "com.example.flutter_create_pokedex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzLJBp-ONhjptzsKIWSMMTl9UGfv3pQqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938290982189-8s1isg4o6nr6uf6d2ckmrobm9v7rtkpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
