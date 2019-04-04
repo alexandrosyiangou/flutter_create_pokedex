@@ -4,12 +4,12 @@ class FirestoreService {
   Firestore _firestore = Firestore.instance;
   
   //TODO: Insert to Pokemon table
-  Future<void> insertPokemon(String index) {
+  Future<void> insertPokemon(String id, String name) {
     return _firestore
       .collection('Pokemon')
-      .document(index)
+      .document(id)
       .setData({
-        'data': 'test'
+        'name': name,
       });
   }
 

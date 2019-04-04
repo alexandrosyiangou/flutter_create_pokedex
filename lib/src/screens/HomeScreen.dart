@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Center(
         child: FutureBuilder<dynamic>(
-          future: PokeapiService().fetchPokemon(),
+          future: PokeapiService().fetchPokemonName(),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               return Text('I Have Data!!');
